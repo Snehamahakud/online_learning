@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> E-Learning Website </title>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="./css/style.css">
+
+        <style>
+            body { background-image: url("./images/bg-texture.png");}
+        </style>
+        
+    </head>
+    <body>
+        <nav>
+            <div class="container nav__container">
+                <a href="#" class="logo"><i class="uil uil-graduation-cap"></i></a>
+                <a href="index.html">
+                    <h4>EGATOR</h4>
+                </a>
+    
+                <section class="search">
+                    <div class="container">
+                        <input type="text" id="searchInput" placeholder="Search for courses...">
+                        <button onclick="searchCourses()">
+                            <i class="uil uil-search"></i>
+                        </button>
+                    </div>
+                </section>
+                
+                <ul class="nav__menu">
+                    
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+                <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+            </div>
+          </nav>
+   
+            
+      <header>
+        <div class="container header__container">
+            <div class="header__left">
+             <h1>Grow your skills to advance your career path</h1>
+             <p>
+                Unlock the power of knowledge anytime,anywhere.
+                Embrace e-learning and turn every moment into an opportunity to grow.
+             </p>
+             <a href="courses.html" class="btn btn-primary"> Get Started </a>
+            </div>
+
+            <div class="header__right">
+              <div class="header__right-image">
+                <img src="./images/header.svg">
+              </div>
+            </div>
+        </div>
+      </header>
+
+      <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1>Categories</h1>
+                <p>
+                    Discover a world where learning never stops and curiosity knows no bounds.
+                     With our e-learning platform, you can explore new skills, deepen your knowledge, 
+                     and transform your future—all at your own pace. 
+                     Join us and turn every click into a step toward success.
+                </p>
+                <a href="#" class="btn"> Learn More</a>
+            </div>
+            <div class="categories__right">
+                <article class="category">
+                    <span class="category__icon">
+                        <i class="uil uil-bitcoin-circle"></i>
+                    </span>
+                    <h5>BlockChain</h5>
+                    <p>Transform your curiosity into mastery with our e-learning platform. 
+                    Dive in, learn at your pace, and let your potential soar.
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <i class="uil uil-palette"></i>
+                    </span>
+                    <h5>Graphic Design</h5>
+                    <p>Transform your curiosity into mastery with our e-learning platform. 
+                    Dive in, learn at your pace, and let your potential soar.
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                    <i class="uil uil-dollar-alt"></i>
+                    </span>
+                    <h5>Finance</h5>
+                    <p>Transform your curiosity into mastery with our e-learning platform. 
+                    Dive in, learn at your pace, and let your potential soar.
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-megaphone"></i></span>
+                    <h5>Marketing</h5>
+                    <p>Transform your curiosity into mastery with our e-learning platform. 
+                    Dive in, learn at your pace, and let your potential soar.
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-apps"></i>
+                    </span>
+                    <h5>Full Stack Development</h5>
+                    <p>Transform your curiosity into mastery with our e-learning platform. 
+                    Dive in, learn at your pace, and let your potential soar.
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                    <i class="uil uil-desktop"></i>
+                    </span>
+                    <h5>Web Development</h5>
+                    <p>Transform your curiosity into mastery with our e-learning platform. 
+                    Dive in, learn at your pace, and let your potential soar.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="courses">
+        <h2>Our Popular Courses</h2>
+        <div class="container courses__container">
+         <article class="course">
+            <div class="course__image">
+                <img src="./images/course1.jpg">
+            </div>
+            <h4>Responsive UI Design</h4>
+            <p>
+                Design isn't just what it looks like and feels like. Design is how it works. 
+                Welcome to the world of UI/UX, 
+                where every pixel and interaction creates a seamless journey.
+            </p>
+            <a href="courses.html" class="btn btn-primary">Learn More </a>
+         </article>
+
+         <article class="course">
+            <div class="course__image">
+                <img src="./images/course2.jpg">
+            </div>
+           <div class="course__Info">
+            <h4>SmartHome Website Design</h4>
+            <p>
+                Design isn't just what it looks like and feels like. Design is how it works. 
+                Welcome to the world of UI/UX, 
+                where every pixel and interaction creates a seamless journey.
+            </p>
+            <a href="courses.html" class="btn btn-primary">Learn More </a>
+           </div>
+         </article>
+
+         <article class="course">
+            <div class="course__image">
+                <img src="./images/course3.jpg">
+            </div>
+            <div class="course__info">
+                <h4>Admin Dashboard Design </h4>
+            <p>
+                Design isn't just what it looks like and feels like. Design is how it works. 
+                Welcome to the world of UI/UX, 
+                where every pixel and interaction creates a seamless journey.
+            </p>
+            <a href="courses.html" class="btn btn-primary">Learn More </a>
+            </div>
+         </article>
+        </div>
+    </section>
+
+
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>
+                        How do I know the right courses of me?
+                    </h4>
+                    <p>
+                        Choosing the right course on an e-learning platform is like charting your path in an unexplored forest:
+                        trust your interests to guide you, evaluate the landmarks of quality and relevance, 
+                        and let your curiosity be the compass that leads you to new horizons of knowledge.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>
+                        Do I get a Certificate for every course I taken?
+                    </h4>
+                    <p>
+                        Choosing the right course on an e-learning platform is like charting your path in an unexplored forest:
+                        trust your interests to guide you, evaluate the landmarks of quality and relevance, 
+                        and let your curiosity be the compass that leads you to new horizons of knowledge.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>
+                        Do I get a refund if the course isn't worth my money?
+                    </h4>
+                    <p>
+                        Choosing the right course on an e-learning platform is like charting your path in an unexplored forest:
+                        trust your interests to guide you, evaluate the landmarks of quality and relevance, 
+                        and let your curiosity be the compass that leads you to new horizons of knowledge.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>
+                        Will I have lifetime access to courses I purchase?
+                    </h4>
+                    <p>
+                        Choosing the right course on an e-learning platform is like charting your path in an unexplored forest:
+                        trust your interests to guide you, evaluate the landmarks of quality and relevance, 
+                        and let your curiosity be the compass that leads you to new horizons of knowledge.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>
+                        Will you assist me to get my first job?
+                    </h4>
+                    <p>
+                        Choosing the right course on an e-learning platform is like charting your path in an unexplored forest:
+                        trust your interests to guide you, evaluate the landmarks of quality and relevance, 
+                        and let your curiosity be the compass that leads you to new horizons of knowledge.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>
+                        What are your payment options?
+                    </h4>
+                    <p>
+                        Choosing the right course on an e-learning platform is like charting your path in an unexplored forest:
+                        trust your interests to guide you, evaluate the landmarks of quality and relevance, 
+                        and let your curiosity be the compass that leads you to new horizons of knowledge.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>
+                        Will you assist me to get my first job?
+                    </h4>
+                    <p>
+                        Choosing the right course on an e-learning platform is like charting your path in an unexplored forest:
+                        trust your interests to guide you, evaluate the landmarks of quality and relevance, 
+                        and let your curiosity be the compass that leads you to new horizons of knowledge.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>
+                        What are the requirements to start?
+                    </h4>
+                    <p>
+                        Choosing the right course on an e-learning platform is like charting your path in an unexplored forest:
+                        trust your interests to guide you, evaluate the landmarks of quality and relevance, 
+                        and let your curiosity be the compass that leads you to new horizons of knowledge.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>
+                        Do I get all source code from projects?
+                    </h4>
+                    <p>
+                        Choosing the right course on an e-learning platform is like charting your path in an unexplored forest:
+                        trust your interests to guide you, evaluate the landmarks of quality and relevance, 
+                        and let your curiosity be the compass that leads you to new horizons of knowledge.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>
+                         Do I get all source code from projects?
+                    </h4>
+                    <p>
+                        Choosing the right course on an e-learning platform is like charting your path in an unexplored forest:
+                        trust your interests to guide you, evaluate the landmarks of quality and relevance, 
+                        and let your curiosity be the compass that leads you to new horizons of knowledge.
+                    </p>
+                </div>
+            </article>
+
+           
+        </div>
+    </section>
+
+
+
+
+    <section class="container testimonials__container mySwiper">
+        <h2>Student's Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar1.jpg">
+                </div>
+
+                <div class="testimonial__info">
+                    <h5>Diana Ayi</h5>
+                    <small>Student</small>
+                </div>
+
+                <div class="testimonial__body">
+                    <p>
+                        The e-learning platform has transformed my learning experience with its engaging content and seamless interface—truly exceptional! 
+                        Highly recommend it for anyone seeking quality education online.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar2.jpg">
+                </div>
+
+                <div class="testimonial__info">
+                    <h5>Edem Quist</h5>
+                    <small>Student</small>
+                </div>
+
+                <div class="testimonial__body">
+                    <p>
+                        The e-learning platform has transformed my learning experience with its engaging content and seamless interface—truly exceptional! 
+                        Highly recommend it for anyone seeking quality education online.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar3.jpg">
+                </div>
+
+                <div class="testimonial__info">
+                    <h5>Haija Bintu</h5>
+                    <small>Student</small>
+                </div>
+
+                <div class="testimonial__body">
+                    <p>
+                        The e-learning platform has transformed my learning experience with its engaging content and seamless interface—truly exceptional! 
+                        Highly recommend it for anyone seeking quality education online.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar4.jpg">
+                </div>
+
+                <div class="testimonial__info">
+                    <h5>Jane Doe</h5>
+                    <small>Student</small>
+                </div>
+
+                <div class="testimonial__body">
+                    <p>
+                        The e-learning platform has transformed my learning experience with its engaging content and seamless interface—truly exceptional! 
+                        Highly recommend it for anyone seeking quality education online.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar5.jpg">
+                </div>
+
+                <div class="testimonial__info">
+                    <h5>Jennifer</h5>
+                    <small>Student</small>
+                </div>
+
+                <div class="testimonial__body">
+                    <p>
+                        The e-learning platform has transformed my learning experience with its engaging content and seamless interface—truly exceptional! 
+                        Highly recommend it for anyone seeking quality education online.
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>   
+    </section>
+
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo"><h4>EGATOR</h4></a>
+                <p>
+                    Unlock your potential, one click at a time. Learn, grow, and thrive with us.
+                </p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms And Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+           <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+01 234 567 8910</p>
+                    <p>sneha@gmail.com</p>
+                </div>
+
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </footer>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+    
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+    </body>
+</html>

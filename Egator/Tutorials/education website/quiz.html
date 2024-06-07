@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>body { background-image: url("./images/bg-texture.png");}</style>
+    <link rel="stylesheet" href="./css/quiz.css">
+    <title>Quiz Section</title>
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <h4>EGATOR</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <div class="alert">Alert</div>
+    <div class="container">
+        <h1>Let's Play a Quiz Game</h1>
+        <div class="question"></div>
+        <div class="choices"></div>
+        <button class="btn nextBtn">Next</button>
+        <div class="scoreCard"></div>
+        <div class="timer"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

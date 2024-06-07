@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Website</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body { background-image: url("./images/bg-texture.png"); }
+        .container { display: none; }
+        .container.active { display: block; }
+    </style>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+
+    <div class="container active" id="signIn">
+        <h1 class="form-title">Sign In</h1>
+        <form method="post" action="register.php">
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email"  id="email"  placeholder="Email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password"  placeholder="Password" required>
+                <label for="password">Password</label>
+            </div>
+            <p class="recover">
+                <a href="#">Recover Password</a>
+            </p>
+            <input type="submit" class="btn" value="Sign In" name="signIn">
+        </form>
+        <p class="or">------------or-------------</p>
+        <div class="icons">
+            <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgoogle%2B%26sca_esv%3D4ce04de13f7e18f6%26sca_upv%3D1%26sxsrf%3DADLYWIIM-Yj9sLD82BR4LSLK-c5kRCQcfg%253A1717768881613%26ei%3DsRJjZv77JNCe4-EPic2D8Aw%26ved%3D0ahUKEwi-mPrf08mGAxVQzzgGHYnmAM4Q4dUDCBA%26uact%3D5%26oq%3Dgoogle%2B%26gs_lp%3DEgxnd3Mtd2l6LXNlcnAiB2dvb2dsZSAyChAjGIAEGCcYigUyBBAjGCcyChAjGIAEGCcYigUyEBAAGIAEGLEDGIMBGBQYhwIyCBAAGIAEGLEDMgsQABiABBixAxiDATIFEAAYgAQyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATIKEAAYgAQYFBiHAkj7FlC8AlixEHABeAGQAQCYAZUDoAHrDqoBCTAuMi4yLjIuMbgBA8gBAPgBAZgCBaACqwfCAgoQABiwAxjWBBhHwgIGEAAYFhgewgINEAAYgAQYsQMYFBiHApgDAIgGAZAGCJIHBzEuMi4xLjGgB79D%26sclient%3Dgws-wiz-serp&ec=GAlAAQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S1141519284%3A1717768910707260&ddm=0"><i class="fab fa-google"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="links">
+            <p>Don't have an account yet?</p>
+            <button id="signUpButton">Sign Up</button>
+        </div>
+    </div>
+
+    <div class="container" id="signup">
+        <h1 class="form-title">Register</h1>
+        <form method="post" action="register.php">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="firstName" id="firstName"  placeholder="First Name" required>
+                <label for="firstName">First Name</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="lastName"  id="lastName" placeholder="Last Name" required>
+                <label for="lastName">Last Name</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email"  id="email" placeholder="Email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <label for="password">Password</label>
+            </div>
+            <input type="submit" class="btn" value="Sign Up" name="signUp">
+        </form>
+        <p class="or">------------or-------------</p>
+        <div class="icons">
+            <i class="fab fa-google"></i> <a href=""></a>
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+            <p>Already have an account?</p>
+            <button id="signInButton">Sign In</button>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
